@@ -17,7 +17,7 @@ public class Input {
 		do {
 			count ++;
 			System.out.print("Hakbun : ");
-			String hakbun = this.sc.nextLine();
+			String hakbun = this.sc.nextLine(); 
 			System.out.print("Name : ");
 			String name = this.sc.nextLine();
 			System.out.print("Korean : ");
@@ -31,9 +31,9 @@ public class Input {
 			this.sc.nextLine(); // 버퍼 날리기
 			
 			this.array[count-1] = new Student (hakbun, name, kor, eng, mat, edp);
-			
 			System.out.print("계속(I/O) ? : ");
 			io = this.sc.next();	
+			this.sc.nextLine(); // 버퍼 날리기 
 		}while(io.equals("I") || io.equals("i"));
 		return count;
 	}
